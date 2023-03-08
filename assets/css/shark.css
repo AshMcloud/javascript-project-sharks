@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+}
+body.main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#heading {
+    border:5px solid;
+    border-color: darkgray;
+    margin-left: 20%;
+    margin-right: 20%; 
+    margin-bottom: 20px;
+}
+#image-display {
+    border-collapse: separate;
+    border-spacing: 5px;
+    margin-bottom: 20px;
+}
+#quiz-display {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+table {
+    border: 2px solid;
+    color: gray;
+    margin-bottom:10px;
+}
+table, th, td {
+    text-align: center;
+    border: 2px solid;
+    color: grey;
+}
+/*Remove borders after finished sizing the format*/
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+th.image-display-box {
+    height: 200px;
+    width: 200px;
+}
+td.image-display-box {
+    height: 150px;
+    width: 200px;
+}
+th, td.info-display {
+    height: 50px;
+}
+#footing {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+/*Consider more footer positioning*/
