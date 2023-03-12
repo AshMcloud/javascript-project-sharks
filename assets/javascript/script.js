@@ -1,12 +1,10 @@
-document.addEventListener("DOMContentLoaded", function(){
-    let start = document.getElementsByClassName("start");
+console.log('Hello world!');
 
-    for (let button of start) {
-        button.addEventListener("click", function() {
-        alert("Quiz is starting!")
-        /*This button should make startGame function*/
-    })
-}
+const startButton = document.getElementById('start');
+startButton.addEventListener('click', function() {
+    startGame();
+});
+
 /*Add actual question/answers within questions*/
 let questions = [
     {
@@ -64,7 +62,6 @@ firstQ += `</table>`;
  return firstQ;
 
 }
-})
 
 let game = startGame();
 
