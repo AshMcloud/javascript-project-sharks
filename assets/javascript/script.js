@@ -2,7 +2,7 @@ console.log('Hello world!');
 
 const startButton = document.getElementById('start');
 startButton.addEventListener('click', function() {
-    startGame();
+    startGame()
 });
 
 /*Add actual question/answers within questions*/
@@ -12,7 +12,7 @@ let questionOne = [
         answerOne: "0-400m",
         answerTwo: "400m+"
     },
-]
+];
 
 let questionTwoA = [
     {
@@ -20,7 +20,7 @@ let questionTwoA = [
         answerOne: "<20°C",
         answerTwo: "20°C +"
     },
-]
+];
 
 let questionTwoB = [
     {
@@ -28,7 +28,7 @@ let questionTwoB = [
         answerOne: "<10°C",
         answerTwo: "10°C +"
     },
-]
+];
 
 let questionThreeA = [
     {
@@ -36,7 +36,7 @@ let questionThreeA = [
         answerOne: "<3.3m",
         answerTwo: "<7.4m"
     },
-]
+];
 
 let questionThreeB = [
     {
@@ -44,7 +44,7 @@ let questionThreeB = [
         answerOne: "<3.5m",
         answerTwo: "<6.1m"
     },
-]
+];
 
 let questionThreeC = [
     {
@@ -52,7 +52,7 @@ let questionThreeC = [
         answerOne: "<730cm",
         answerTwo: "<196cm"
     },
-]
+];
 
 let questionThreeD = [
     {
@@ -60,107 +60,173 @@ let questionThreeD = [
         answerOne: "<8m",
         answerTwo: "<21m"
     },
-]
+];
 
 let questionFourA = [
     {
-        question: "How great is your size?",
-        answerOne: "<8m",
-        answerTwo: "<21m"
+        question: "What is your prefered habitat?",
+        answerOne: "Muddy/sandy banks",
+        answerTwo: "Continental shelves/ Pelagic region"
     },
-]
+];
 
 let questionFourB = [
     {
-        question: "How great is your size?",
-        answerOne: "<8m",
-        answerTwo: "<21m"
+        question: "What is your prefered habitat?",
+        answerOne: "Migratory",
+        answerTwo: "Coastal/ Atoll Islands"
     },
-]
+];
 
 let questionFourC = [
     {
-        question: "How great is your size?",
-        answerOne: "<8m",
-        answerTwo: "<21m"
+        question: "What is your prefered habitat?",
+        answerOne: "Tropic coral reefs",
+        answerTwo: "Coral reefs/ Lagoons"
     },
-]
+];
 
 let questionFourD = [
     {
-        question: "How great is your size?",
-        answerOne: "<8m",
-        answerTwo: "<21m"
+        question: "What is your prefered habitat?",
+        answerOne: "Rocky or coral shelves/Mangroves",
+        answerTwo: "Coastal/ Pelagic region"
     },
-]
+];
 
 let questionFourE = [
     {
-        question: "How great is your size?",
-        answerOne: "<8m",
-        answerTwo: "<21m"
+        question: "What is your prefered habitat?",
+        answerOne: "Deep continetal shelves",
+        answerTwo: "North Atlantic/Arctic Sea"
     },
-]
+];
 
 let questionFourF = [
     {
-        question: "How great is your size?",
-        answerOne: "<8m",
-        answerTwo: "<21m"
+        question: "What is your prefered habitat?",
+        answerOne: "Epibenthic/ Benthic/ Pelagic region",
+        answerTwo: "Mesopelagic region"
     },
-]
+];
 
 let questionFourG = [
     {
-        question: "How great is your size?",
-        answerOne: "<8m",
-        answerTwo: "<21m"
+        question: "What is your prefered habitat?",
+        answerOne: "Oceanic/ Epipelagic/ Open ocean",
+        answerTwo: "Contintental Shelves"
     },
-]
+];
 
 let questionFourH = [
     {
-        question: "How great is your size?",
-        answerOne: "<8m",
-        answerTwo: "<21m"
+        question: "What is your prefered habitat?",
+        answerOne: "Coastal/ Continental Shelves",
+        answerTwo: "Open ocean/ Pelagic region"
     },
-]
-let result1 = " "
+];
 
-let result2 = " "
+let results = [
+    {
+        result: "Angel Shark",
+        fact: " ",
+        Image: " "
+    },
+    {
+        result: "Blue Shark",
+        fact: " ",
+        Image: " "
 
-let result3 = " "
+    },
+    {
+        result: "Thresher Shark",
+        fact: " ",
+        Image: " "
 
-let result4 = " "
+    },
+    {
+        result: "Tiger Shark",
+        fact: " ",
+        Image: " "
+    },
+    {
+        result: "Black Tip Reef Shark",
+        fact: " ",
+        Image: " "
 
-let result5 = " "
+    },
+    {
+        result: "Zebra Shark",
+        fact: " ",
+        Image: " "
 
-let result6 = " "
+    },
+    {
+        result: "Nursing Shark",
+        fact: " ",
+        Image: " "
 
-let result7 = " "
+    },
+    {
+        result: "Great Hammered Head",
+        fact: " ",
+        Image: " "
 
-let result8 = " "
+    },
+    {
+        result: "Goblin Shark",
+        fact: " ",
+        Image: " "
 
-let result9 = " "
+    },
+    {
+        result: "Greenland Shark",
+        fact: " ",
+        Image: " "
 
-let result10 = " "
+    },
+    {
+        result: "Frilled Shark",
+        fact: " ",
+        Image: " "
 
-let result11 = " "
+    },
+    {
+        result: "Pygmy Shark",
+        fact: " ",
+        Image: " "
 
-let result12 = " "
+    },
+    {
+        result: "Oceanic White Tip Shark",
+        fact: " ",
+        Image: " "
 
-let result13 = " "
+    },
+    {
+        result: "Great White Shark",
+        fact: " ",
+        Image: " "
 
-let result14 = " "
+    },
+    {
+        result: "Basking Shark",
+        fact: " ",
+        Image: " "
 
-let result15 = " "
+    },
+    {
+        result: "Whale Shark",
+        fact: " ",
+        Image: " "
 
-let result16 = " "
+    },
+];
 
 
 /*I want to iterate through each question individually before moving onto the next*/
 function startGame() {
-let html = `
+let htmlQOne = `
     <table class="center" id="quiz-display">
         <tr>
             <th class="info-display">Question:</th>
@@ -169,22 +235,20 @@ let html = `
 for (let question of questionOne){
     let firstQ = `
     <tr>
-        <th>${question.questionOne}</th>
+        <th>${question.question}</th>
     </tr>
     <tr>
-        <td>${answerOne.questionOne}</td>
-        <td>${answerTwo.questionOne}</td>
+        <td>${question.answerOne}</td><button><i class="fa-solid fa-check"></i></button>
+        <td>${question.answerTwo}</td><button><i class="fa-solid fa-check"></i></button>
     </tr>`;
+htmlQOne += firstQ
 }
+htmlQOne += `
+</table>
+`;
+return htmlQOne;
 
-firstQ += `</table>`;
-
-return firstQ;
-
+document.getElementsByClassName('quiz-area').innerHTML = htmlQOne;
+/** buttons on click move to new fuction for next question*/
 }
-
-let game = startGame();
-
-document.getElementsByClassName('quiz-area').innerHTML = game;
-
 /*after all answers tallied I want to run a new fuction for the results*/
