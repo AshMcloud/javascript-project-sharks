@@ -6,36 +6,158 @@ startButton.addEventListener('click', function() {
 });
 
 /*Add actual question/answers within questions*/
-let questions = [
+let questionOne = [
     {
-        question: "A1",
-        answerOne: "AA",
-        answerTwo: "AB",
-        answerThree: "AC",
-        answerFour: "AD"
-    },
-    {
-        question: "B2",
-        answerOne: "BA",
-        answerTwo: "BB",
-        answerThree: "BC",
-        answerFour: "BD"
-    },
-    {
-        question: "C3",
-        answerOne: "CA",
-        answerTwo: "CB",
-        answerThree: "CC",
-        answerFour: "CD"
-    },
-    {
-        question: "D4",
-        answerOne: "DA",
-        answerTwo: "DB",
-        answerThree: "DC",
-        answerFour: "DD"
+        question: "What depth range do you live at?",
+        answerOne: "0-400m",
+        answerTwo: "400m+"
     },
 ]
+
+let questionTwoA = [
+    {
+        question: "What average water temperature do you prefer?",
+        answerOne: "<20°C",
+        answerTwo: "20°C +"
+    },
+]
+
+let questionTwoB = [
+    {
+        question: "What average water temperature do you prefer?",
+        answerOne: "<10°C",
+        answerTwo: "10°C +"
+    },
+]
+
+let questionThreeA = [
+    {
+        question: "How great is your size?",
+        answerOne: "<3.3m",
+        answerTwo: "<7.4m"
+    },
+]
+
+let questionThreeB = [
+    {
+        question: "How great is your size?",
+        answerOne: "<3.5m",
+        answerTwo: "<6.1m"
+    },
+]
+
+let questionThreeC = [
+    {
+        question: "How great is your size?",
+        answerOne: "<730cm",
+        answerTwo: "<196cm"
+    },
+]
+
+let questionThreeD = [
+    {
+        question: "How great is your size?",
+        answerOne: "<8m",
+        answerTwo: "<21m"
+    },
+]
+
+let questionFourA = [
+    {
+        question: "How great is your size?",
+        answerOne: "<8m",
+        answerTwo: "<21m"
+    },
+]
+
+let questionFourB = [
+    {
+        question: "How great is your size?",
+        answerOne: "<8m",
+        answerTwo: "<21m"
+    },
+]
+
+let questionFourC = [
+    {
+        question: "How great is your size?",
+        answerOne: "<8m",
+        answerTwo: "<21m"
+    },
+]
+
+let questionFourD = [
+    {
+        question: "How great is your size?",
+        answerOne: "<8m",
+        answerTwo: "<21m"
+    },
+]
+
+let questionFourE = [
+    {
+        question: "How great is your size?",
+        answerOne: "<8m",
+        answerTwo: "<21m"
+    },
+]
+
+let questionFourF = [
+    {
+        question: "How great is your size?",
+        answerOne: "<8m",
+        answerTwo: "<21m"
+    },
+]
+
+let questionFourG = [
+    {
+        question: "How great is your size?",
+        answerOne: "<8m",
+        answerTwo: "<21m"
+    },
+]
+
+let questionFourH = [
+    {
+        question: "How great is your size?",
+        answerOne: "<8m",
+        answerTwo: "<21m"
+    },
+]
+let result1 = " "
+
+let result2 = " "
+
+let result3 = " "
+
+let result4 = " "
+
+let result5 = " "
+
+let result6 = " "
+
+let result7 = " "
+
+let result8 = " "
+
+let result9 = " "
+
+let result10 = " "
+
+let result11 = " "
+
+let result12 = " "
+
+let result13 = " "
+
+let result14 = " "
+
+let result15 = " "
+
+let result16 = " "
+
+
 /*I want to iterate through each question individually before moving onto the next*/
 function startGame() {
 let html = `
@@ -44,22 +166,20 @@ let html = `
             <th class="info-display">Question:</th>
         </tr>
         `;
-for (let question of questions){
+for (let question of questionOne){
     let firstQ = `
     <tr>
-        <th>${question.questions}</th>
+        <th>${question.questionOne}</th>
     </tr>
     <tr>
-        <td>${answerOne.questions}</td>
-        <td>${answerTwo.questions}</td>
-        <td>${answerThree.questions}</td>
-        <td>${answerFour.questions}</td>
+        <td>${answerOne.questionOne}</td>
+        <td>${answerTwo.questionOne}</td>
     </tr>`;
 }
 
 firstQ += `</table>`;
 
- return firstQ;
+return firstQ;
 
 }
 
