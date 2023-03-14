@@ -2,7 +2,7 @@ console.log('Hello world!');
 
 const startButton = document.getElementById('start');
 startButton.addEventListener('click', function() {
-    firstQuestion()
+    showTheQuestions()
 });
 
 /*Add actual question/answers within questions*/
@@ -308,20 +308,16 @@ let questions = [
         }
 ];
 
-function firstQuestion(){
+function showTheQuestions() {
+    let response = '';
     for (let question of questions) {
-    let htmlQOne = `
-    <table class="center" id="quiz-display">
-        <tr>
-            <th>Question:</th>
-            <th>${question.question}</th>
-        </tr>
-        <tr>
-            <td>${question.answerOne}<button id="aOne" type="button" onclick="secondQuestion()"><i class="fa-solid fa-check"></i></button></td>
-            <td>${question.answerTwo}<button id="aTwo" type="button" onclick="thirdQuestion()"><i class="fa-solid fa-check"></i></button></td>
-        </tr>
-    </table>`;
-    document.getElementById('quiz-area').innerHTML = htmlQOne;
-    return htmlQOne;
-    } 
+        response += `<div>${question.question}</div>`;
+        response += `<button>${question.answerOne}</button>`
+        response += `<button>${question.answerTwo}</button>`
+        response += `<button>${question.answerThree}</button>`
+        response += `<button>${question.answerFour}</button>`
+        response += `<button>${question.answerFive}</button>`
+    }
+    document.getElementById('quiz-area').innerHTML = response;
+    return response
 }
