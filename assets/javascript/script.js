@@ -6,7 +6,7 @@ startButton.addEventListener('click', function() {
 });
 
 /*Add actual question/answers within questions*/
-let questions = [
+const questions = [
     {
         question: "What depth range do you live at?",
         answerOne: {
@@ -46,6 +46,15 @@ let questions = [
             gWhite: 1,
             basking: 1,
             whale: 1,
+        },
+        answerThree: {
+            text: " ",
+        },
+        answerFour: {
+            text: " ",
+        },
+        answerFive: {
+            text: " "
         }
     },
     {
@@ -106,7 +115,13 @@ let questions = [
             gWhite: 0,
             basking: 0,
             whale: 1,
-        }
+        },
+        answerFour: {
+            text: " ",
+        },
+        answerFive: {
+            text: " ",
+        },
     },
     {
         question: "What is your prefered habitat?",
@@ -312,11 +327,11 @@ function showTheQuestions() {
     let response = '';
     for (let question of questions) {
         response += `<div>${question.question}</div>`;
-        response += `<button>${question.answerOne}</button>`
-        response += `<button>${question.answerTwo}</button>`
-        response += `<button>${question.answerThree}</button>`
-        response += `<button>${question.answerFour}</button>`
-        response += `<button>${question.answerFive}</button>`
+        response += `<button>${question.answerOne.text}</button>`
+        response += `<button>${question.answerTwo.text}</button>`
+        response += `<button>${question.answerThree.text}</button>`
+        response += `<button>${question.answerFour.text}</button>`
+        response += `<button>${question.answerFive.text}</button>`
     }
     document.getElementById('quiz-area').innerHTML = response;
     return response
