@@ -1,14 +1,13 @@
-const questions = [
+const question = [
     {
-    question : {
         ask : "What depth range do you live at?",
         answer : {
             text : "0-400m",
-            score : []
+            score : ["angel", "blue", "thresher", "blackTip", "zebra", "nurse", "gHammer"]
         },
         answer : {
             text : "400m+",
-            score : []
+            score : ["goblin", "greenland", "frilled", "pygmy", "oceanic", "gWhite", "basking", "whale"]
         },
         answer : {
             text : " ",
@@ -17,32 +16,28 @@ const questions = [
         answer : {
             text : " ",
             score : []
-        }
         }
     },
     {
-        question : {
-            ask : " ",
+            ask : "What average water temperature do you prefer?",
             answer : {
-                text : " ",
-                score : []
+                text : "<10°C",
+                score : ["goblin", "greenland", "frilled", "pygmy"]
             },
             answer : {
-                text : " ",
-                score : []
+                text : "10°C - 20°C",
+                score : ["angel", "blue", "thresher", "gWhite", "basking"]
             },
             answer : {
-                text : " ",
-                score : []
+                text : "20°C+",
+                score : ["tiger", "blackTip", "zebra", "nurse", "gHammer", "oceanic", "whale"]
             },
             answer : {
                 text : " ",
                 score : []
             }
-            }
-        },
+            },
         {
-            question : {
                 ask : " ",
                 answer : {
                     text : " ",
@@ -60,10 +55,8 @@ const questions = [
                     text : " ",
                     score : []
                 }
-                }
-            },
+                },
             {
-                question : {
                     ask : " ",
                     answer : {
                         text : " ",
@@ -81,10 +74,8 @@ const questions = [
                         text : " ",
                         score : []
                     }
-                    }
-                },
+                    },
                 {
-                    question : {
                         ask : " ",
                         answer : {
                             text : " ",
@@ -103,16 +94,16 @@ const questions = [
                             score : []
                         }
                         }
-                    },
 ];
 
 let begin = document.getElementById('start');
 
 begin.addEventListener("click", function(){
-    alert("Quiz is starting!")
+    showQuestions()
 });
 
 function showQuestions() {
+let questionArea = document.getElementById('ask-area').innerHTML = question[0].ask;
 
 };
 
