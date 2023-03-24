@@ -106,11 +106,24 @@ const questions = [
                     },
 ];
 
-function showQuestions()
+let begin = document.getElementById('start');
 
-function recordScore()
+begin.addEventListener("click", function(){
+    alert("Quiz is starting!")
+});
 
-function nextQuestion()
+function showQuestions() {
 
-function showScore()
+};
 
+function recordScore() {
+
+};
+
+function nextQuestion(){
+
+};
+
+function showScore(){
+
+};
