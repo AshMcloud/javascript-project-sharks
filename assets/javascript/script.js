@@ -9,8 +9,6 @@ startButton.addEventListener('click', function() {
 const questions = [
     {
         question: "What depth range do you live at?",
-        display: none,
-        id = "q1":
         answerOne: {
             text: "0-400m",
             angel: 1,
@@ -61,8 +59,6 @@ const questions = [
     },
     {
         question: "What average water temperature do you prefer?",
-        display: none,
-        id = "q2",
         answerOne: { 
             text: "<10°C",
             angel: 0,
@@ -129,8 +125,6 @@ const questions = [
     },
     {
         question: "What is your prefered habitat?",
-        display: none,
-        id = "q3",
         answerOne: {
             text: "Continental shelves",
             angel: 0,
@@ -231,8 +225,6 @@ const questions = [
     },
     {
         question : "As a mature shark, what is your average size?",
-        display: none,
-        id = "q4",
         answerOne: {
             text: "<1m",
             angel: 0,
@@ -335,22 +327,26 @@ function showTheQuestions() {
     let response = '';
     for (let question of questions) {
         response += `<div>${question.question}</div>`;
-        response += `<button class="answs" id="answer-one">${question.answerOne.text}</button>`
-        response += `<button class="answs" id="answer-two">${question.answerTwo.text}</button>`
-        response += `<button class="answs" id="answer-three">${question.answerThree.text}</button>`
-        response += `<button class="answs" id="answer-four">${question.answerFour.text}</button>`
-        response += `<button class="answs" id="answer-five">${question.answerFive.text}</button>`
+        response += `<button class="answs" id="answer-one" type="submit">${question.answerOne.text}</button>`
+        response += `<button class="answs" id="answer-two" type="submit">${question.answerTwo.text}</button>`
+        response += `<button class="answs" id="answer-three" type="submit">${question.answerThree.text}</button>`
+        response += `<button class="answs" id="answer-four" type="submit">${question.answerFour.text}</button>`
+        response += `<button class="answs" id="answer-five" type="submit">${question.answerFive.text}</button>`
     }
     document.getElementById('quiz-area').innerHTML = response;
     return response
 }
 
-var header = document.getElementById("quiz-area");
-var answ = header.getElementsByClassName("answs");
-for (var i = 0; i < answ.length; i++) {
-  answ[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
+const submitButton = document.getElementById('submit');
+
+let currentQuestion = 1;
+
+submitButton.addEventListener('click', () => {
+  const currentElement = document.getElementById(`q${currentQuestion}`);
+  const nextElement = document.getElementById(`q${currentQuestion + 1}`);
+
+  currentElement.classList.remove('active');
+  nextElement.classList.add('active');
+
+  currentQuestion += 1;
+});
