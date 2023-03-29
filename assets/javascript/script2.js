@@ -63,44 +63,23 @@ const question = [
         ]
     },
     {
-        ask : "?",
+        ask : "As a mature shark, what is your average size?",
         answer : [
             {
-                text : "ooh",
-                score : [" "]
+                text : "<2.5m",
+                score : ["goblin", "greenland", "frilled", "pygmy", "angel", "blackTip"]
             },
             {
-                text : "eeeh",
-                score : [" "]
+                text : "2.5m-5m",
+                score : ["blue", "zebra", "nurse", "oceanic"]
             },
             {
-                text : "oooHooo",
-                score : [" "]
+                text : "5m-7.5m",
+                score : ["thresher", "gHammer", "tiger"]
             },
             {
-                text : "ahAH",
-                score : [" "]
-            }
-        ]
-    },
-    {
-        ask : "?",
-        answer : [
-            {
-                text : "ooh",
-                score : [" "]
-            },
-            {
-                text : "eeeh",
-                score : [" "]
-            },
-            {
-                text : "oooHooo",
-                score : [" "]
-            },
-            {
-                text : "ahAH",
-                score : [" "]
+                text : "7.5m+",
+                score : ["gWhite", "basking", "whale"]
             }
         ]
     },
