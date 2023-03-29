@@ -41,6 +41,90 @@ const question = [
             }
         ]
     },
+    {
+        ask : "What is your prefered habitat?",
+        answer : [
+            {
+                text : "Continental shelves",
+                score : ["blue", "goblin", "gWhite", "basking"]
+            },
+            {
+                text : "Coral reefs, sandy/muddy banks, mangroves & lagoons",
+                score : ["blackTip", "nurse", "zebra","angel", "tiger", "nurse"]
+            },
+            {
+                text : "Pelagic/Open ocean",
+                score : ["blue", "thresher", "gHammer", "oceanic", "gWhite", "whale"]
+            },
+            {
+                text : "Deep, dark & cold!",
+                score : ["goblin", "greenland", "frilled", "pygmy"]
+            }
+        ]
+    },
+    {
+        ask : "?",
+        answer : [
+            {
+                text : "ooh",
+                score : [" "]
+            },
+            {
+                text : "eeeh",
+                score : [" "]
+            },
+            {
+                text : "oooHooo",
+                score : [" "]
+            },
+            {
+                text : "ahAH",
+                score : [" "]
+            }
+        ]
+    },
+    {
+        ask : "?",
+        answer : [
+            {
+                text : "ooh",
+                score : [" "]
+            },
+            {
+                text : "eeeh",
+                score : [" "]
+            },
+            {
+                text : "oooHooo",
+                score : [" "]
+            },
+            {
+                text : "ahAH",
+                score : [" "]
+            }
+        ]
+    },
+    {
+        ask : "?",
+        answer : [
+            {
+                text : "ooh",
+                score : [" "]
+            },
+            {
+                text : "eeeh",
+                score : [" "]
+            },
+            {
+                text : "oooHooo",
+                score : [" "]
+            },
+            {
+                text : "ahAH",
+                score : [" "]
+            }
+        ]
+    },
 ];
 
 let begin = document.getElementById('start');
