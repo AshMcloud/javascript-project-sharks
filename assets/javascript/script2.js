@@ -59,30 +59,36 @@ let fourthAnswer = document.getElementById('answer-four').innerHTML = question[0
 
 let buttonOne = document.getElementById('answer-one');
 buttonOne.addEventListener("click", function(){
-    getScore()
+    alert(document.getElementById('answer-one').innerHTML)
 });
+/** Add a way to display "you answered" along with the button clicked*/
 
 let buttonTwo = document.getElementById('answer-two');
 buttonTwo.addEventListener("click", function(){
-    getScore()
+    alert(document.getElementById('answer-two').innerHTML)
 });
 
 let buttonThree = document.getElementById('answer-three');
 buttonThree.addEventListener("click", function(){
-    getScore()
+    alert(document.getElementById('answer-three').innerHTML)
 });
 
 let buttonFour = document.getElementById('answer-four');
 buttonFour.addEventListener("click", function(){
-    getScore()
+    alert(document.getElementById('answer-four').innerHTML)
 });
 
-function getScore() {
-alert("clicked")
+function storeScore() {
+
 };
 
 function nextQuestion(){
-
+    let displayNextQuestion = document.getElementsByClassName('button');
+    displayNextQuestion.addEventListener("click", function(){
+        var arrayLength = showQuestions.length;
+        for (var i = 0; i < arrayLength; i++) {
+        }
+    })
 };
 
 function showScore(){
