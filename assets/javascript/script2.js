@@ -153,7 +153,7 @@ function nextQuestion(){
         }
     })
 };
-
+/**Make the above function*/
 function showScore(){
 
 };
